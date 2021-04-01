@@ -6,4 +6,4 @@
 # For running web app
 In your cmd or terminal<br/>
 (1) pip install streamlit<br/>
-(2) streamlit run Predict.py<br/>
+(2) streamlit run DemoPredict.py<br/>
