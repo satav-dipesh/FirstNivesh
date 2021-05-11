@@ -25,7 +25,7 @@ option3 = st.sidebar.selectbox(
      dfselect['third column'])
 
 
-df = pdr.get_data_tiingo(option,api_key='8a517a47972ce5e28ceba79043c0b25ff31090a7')
+df = pdr.get_data_tiingo(option,api_key='Your API Key from tiingo')
 df.to_csv('{}.csv'.format(option))
 df = pd.read_csv('{}.csv'.format(option))
 df1 = df.reset_index()['close']
