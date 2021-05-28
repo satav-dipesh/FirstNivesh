@@ -1,2 +1,3 @@
-# TA_Dashboard
-An easy-to-use Technical Analysis Dashboard using Streamlit and Heroku!
+# Financial Analytics and Deep Learning Modelling
+A Streamlit App for Financial Analysis, Modelling and Market Sentiment Analysis 
+
