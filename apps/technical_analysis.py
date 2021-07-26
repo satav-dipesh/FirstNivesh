@@ -30,11 +30,9 @@ def app():
     symbol, start, end = user_input_features()
     
     def get_symbol(symbol):
-        url = "https://query2.finance.yahoo.com/v7/finance/options/{}?date=1679011200".format(symbol)
-        result = requests.get(url).json()
-        for x in result['ResultSet']['Result']:
-            if x['symbol'] == symbol:
-                return x['displayName']
+        cticker = yf.Ticker(symbol)
+        company_name = cticker.info['longName']
+        return company_name
     company_name = get_symbol(symbol.upper())
     
     start = pd.to_datetime(start)
