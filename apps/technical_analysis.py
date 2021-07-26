@@ -30,7 +30,7 @@ def app():
     symbol, start, end = user_input_features()
     
     def get_symbol(symbol):
-        url = "http://d.yimg.com/autoc.finance.yahoo.com/autoc?query={}&region=1&lang=en".format(symbol)
+        url = "https://query2.finance.yahoo.com/v7/finance/options/{}?date=1679011200".format(symbol)
         result = requests.get(url).json()
         for x in result['ResultSet']['Result']:
             if x['symbol'] == symbol:
