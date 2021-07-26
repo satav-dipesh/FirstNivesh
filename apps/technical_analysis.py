@@ -34,7 +34,7 @@ def app():
         result = requests.get(url).json()
         for x in result['ResultSet']['Result']:
             if x['symbol'] == symbol:
-                return x['name']
+                return x['displayName']
     company_name = get_symbol(symbol.upper())
     
     start = pd.to_datetime(start)
